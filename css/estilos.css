@@ -792,6 +792,7 @@ body{
     5.7px 7.7px 10.8px -2.5px hsl(var(--shadow-color) / 0.72);
     z-index: 10;
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     /* backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px); */
 
