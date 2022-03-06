@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOMAV</title>
+    <link rel="shortcut icon" href="./images/logo2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="css/tooltip-classic.css" />
+    <link rel="stylesheet" type="text/css" href="css/style17.css" />
+    <link rel="stylesheet" type="text/css" href="css/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/menu_topexpand.css" />
+
+    <!-- METATAGS -->
+
+    <!-- Google Analitics -->
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="hidden">
+        <defs>
+          <filter id="blur">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="0,0" />
+          </filter>
+        </defs>
+    </svg>
+
+    <div class="containerExpand ">
+        <div class="menu-wrap">
+            <nav class="menuExpand">
+                <div class="icon-list">
+                    <a href="#"><i class="fa fa-fw fa-star-o"></i><span>Inicio</span></a>
+                    <a href="#"><i class="fa fa-fw fa-bell-o"></i><span>Contacto</span></a>
+                    <a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Nosotros</span></a>
+                    <a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Servicios</span></a>
+                </div>
+            </nav>
+        </div>
+        <button class="menu-button" id="open-button"></button>
+    </div>
+
+    <header id="inicio" class="hero"> 
+        <nav class="menu--juliet nav">
+            <ul class="menu__list nav__link ">
+                <li class="menu__item menu__item--current"><a href="#" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="#contacto" class="menu__link">Contacto</a></li>
+                <li class="menu__item"><a href="#nosotros" class="menu__link">Nosotros</a></li>
+                <li class="menu__item"><a href="#servicios" class="menu__link">Servicios</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero__container container">
+            <div class="hero__body">
+                <img src="./images/escudo.png" alt="Logo" class="logoHome">
+                <div class="homeText">
+                    <!-- <h1 class="hero__title">BIOMAV</h1>
+                    <h3>BIOMEDICINA AVANZADA</h2> -->
+                        <div class="contentText">
+                            <svg viewBox="0 0 1450 400">
+                
+                                <!-- Symbol with text -->
+                                <symbol id="s-text">
+                                    <text text-anchor="middle" x="49%" y="49%" dy=".35em" class="text--line">
+                                        BIOMAV
+                                    </text>
+                                </symbol>
+                
+                                <!-- Clippath  with text -->
+                                <clippath id="cp-text">
+                                    <text text-anchor="middle" x="49%" y="49%" dy=".35em" class="text--line">
+                                        biomav
+                                    </text>
+                                </clippath>
+                
+                                <!-- Group for shadow -->
+                                <g clip-path="url(#cp-text)" class="shadow">
+                                    <rect width="100%" height="100%" class="anim-shape anim-shape--shadow"></rect>
+                                </g>
+                
+                                <!-- Group with clippath for text-->
+                                <g clip-path="url(#cp-text)" class="colortext">
+                                    <!-- Animated shapes inside text -->
+                                    <rect width="100%" height="100%" class="anim-shape"></rect>
+                                    <rect width="80%" height="100%" class="anim-shape"></rect>
+                                    <rect width="60%" height="100%" class="anim-shape"></rect>
+                                    <rect width="40%" height="100%" class="anim-shape"></rect>
+                                    <rect width="20%" height="100%" class="anim-shape"></rect>
+                                </g>
+                
+                                <!-- Transparent copy of text to keep patterned text selectable -->
+                                <use xlink:href="#s-text" class="text--transparent"></use>
+                
+                            </svg>
+                            <svg viewBox="0 0 4500 500" >
+                
+                                <!-- Symbol with text -->
+                                <symbol id="s-texto">
+                                    <text text-anchor="middle" x="49%" y="49%" dy=".35em" class="text--line">
+                                        BIOMEDICINA AVANZADA
+                                    </text>
+                                </symbol>
+                
+                                <!-- Clippath  with text -->
+                                <clippath id="cp-texto">
+                                    <text text-anchor="middle" x="48%" y="49%" dy=".35em" class="text--line">
+                                        BIOMEDICINA AVANZADA
+                                    </text>
+                                </clippath>
+                
+                                <!-- Group for shadow -->
+                                <g clip-path="url(#cp-texto)" class="shadow">
+                                    <rect width="100%" height="100%" class="anim-shape anim-shape--shadow"></rect>
+                                </g>
+                
+                                <!-- Group with clippath for text-->
+                                <g clip-path="url(#cp-texto)" class="colortext">
+                                    <!-- Animated shapes inside text -->
+                                    <rect width="100%" height="100%" class="anim-shape"></rect>
+                                    <rect width="80%" height="100%" class="anim-shape"></rect>
+                                    <rect width="60%" height="100%" class="anim-shape"></rect>
+                                    <rect width="40%" height="100%" class="anim-shape"></rect>
+                                    <rect width="20%" height="100%" class="anim-shape"></rect>
+                                </g>
+                
+                                <!-- Transparent copy of text to keep patterned text selectable -->
+                                <use xlink:href="#s-texto" class="text--transparent"></use>
+                
+                            </svg>
+                        </div>                                        
+                </div>                      
+            </div>
+        </section>
+        
+        
+    </header>
+
+    <main>
+
+        <section id="contacto" class="sections section_contacto">
+            <h2 class="title">Contacto</h2>
+            <div class="contacto_container">
+                <div class="testimonial">
+                    <div class="testimonial-body">
+                        <p></p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <a href="https://wa.me/5492664941259?text=Hola!%20Queria%20consultar%20acerca%20de%20" target="_blank"><img src="./images/whatsapp.svg" alt="user"/></a>
+                        <h3>WathsApp</h3>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>Puede cliquear en el icono o llamar al 2664-941259</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-body">
+                        <p></p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <a href="https://goo.gl/maps/RRcL6oCcLBvnsTnK7" target="_blank" rel="noopener noreferrer"><img src="./images/location.svg" alt="user" /></a>
+                        <h3>Ubicacion</h3>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>9 de Julio 358<br>San Luis, Argentina</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-body">
+                        <p></p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <a href="mailto:informes@labbiomav.com" target="_blank"><img src="./images/gmail.svg" alt="user" /></a>
+                        <h3>Mail</h3>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>informes@labbiomav.com</p>
+                    </div>
+                    
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-body">
+                        <p></p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <a href="https://www.instagram.com/laboratoriobiomav/" target="_blank" rel="noopener noreferrer"><img src="./images/instagram.svg" alt="user" /></a>
+                        <h3>Instagram</h3>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>@laboratoriobiomav</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="sections section_nosotros">
+            <h2 class="title">Nosotros</h2>
+            <div class="nosotros_container">
+                <div class="dummy dummy-text">
+                    <p>Nuestro Laboratorio se funda con la misión de aportar a nuestra región<span class="tooltip tooltip-effect-1"><span class="tooltip-item">diagnosticos de Calidad</span><span class="tooltip-content clearfix"><span class="tooltip-text">Contamos con tecnologia de punta y con los mejores profesionales garantizando la mejor calidad en los resultados.<br>Conoce mas en nuestra seccion de <a style="text-decoration:none;color: white;" href="#fotos">fotos</a></span></span></span>,
+                        procesando localmente la complejidad que la medicina actual requiere. Así, disminuimos los tiempos de entrega de resultados y facilitamos el acceso a determinaciones complejas tanto a nuestros pacientes como a colegas, médicos e instituciones de salud. 
+                        <br>Cada uno de los integrantes de nuestro equipo es consciente de los estándares de calidad y la responsabilidad que estas prácticas demandan.
+                        <br><span class="tooltip tooltip-effect-1"><span class="tooltip-item">SE PARTE DE ESTE DESAFIO.</span><span class="tooltip-content clearfix"><span class="tooltip-text">No dudes en consultar por cualquier inquietud<br><a style="text-decoration:none;color: white;" href="#fotos">CONTACTO</a></span></span></span> 
+                    </p>
+					<!-- <p>Tesseract, finite but unbounded take root and flourish, <span class="tooltip tooltip-effect-1"><span class="tooltip-item">Euclid</span><span class="tooltip-content clearfix"><img src="img/Euclid.png" /><span class="tooltip-text"><strong>Euclid</strong>, also known as Euclid of Alexandria, was a Greek mathematician, often referred to as the "Father of Geometry". He was active in Alexandria during the reign of Ptolemy I. <a href="http://en.wikipedia.org/wiki/Euclid">Wikipedia</a></span></span></span> rogue laws of physics, star stuff harvesting star light, encyclopaedia galactica are creatures of the cosmos the only home we've ever known ship of the imagination prime number <span class="tooltip tooltip-effect-2"><span class="tooltip-item">quasar</span><span class="tooltip-content clearfix"><img src="img/Quasar.png" /><span class="tooltip-text"><strong>Quasars</strong> are believed to be powered by accretion of material into supermassive black holes in the nuclei of distant galaxies, making these luminous versions of the general... <a href="http://en.wikipedia.org/wiki/Quasar">Wikipedia</a></span></span></span> courage of our questions.</p>
+					<p>Kindling the energy shown in Orion's sword, rich in heavy atoms shores of the cosmic ocean kindling the energy <span class="tooltip tooltip-effect-3"><span class="tooltip-item">Euclid</span><span class="tooltip-content clearfix"><img src="img/Euclid.png" /><span class="tooltip-text"><strong>Euclid</strong>, also known as Euclid of Alexandria, was a Greek mathematician, often referred to as the "Father of Geometry". He was active in Alexandria during the reign of Ptolemy I. <a href="http://en.wikipedia.org/wiki/Euclid">Wikipedia</a></span></span></span> hidden in matter. Emerged into consciousness paroxysm of global death? Shores of the cosmic ocean. Globular star cluster a still more glorious dawn awaits. Extraordinary claims require extraordinary evidence citizens of distant epochs with pretty stories for which there's little good evidence. </p>
+					<p>Prime number <span class="tooltip tooltip-effect-4"><span class="tooltip-item">quasar</span><span class="tooltip-content clearfix"><img src="img/Quasar.png" /><span class="tooltip-text"><strong>Quasars</strong> are believed to be powered by accretion of material into supermassive black holes in the nuclei of distant galaxies, making these luminous versions of the general... <a href="http://en.wikipedia.org/wiki/Quasar">Wikipedia</a></span></span></span> courage of our questions kindling the energy <span class="tooltip tooltip-effect-5"><span class="tooltip-item">Euclid</span><span class="tooltip-content clearfix"><span class="tooltip-text"><strong>Euclid</strong>, also known as Euclid of Alexandria, was a Greek mathematician, often referred to as the "Father of Geometry". He was active in Alexandria during the reign of Ptolemy I. <a href="http://en.wikipedia.org/wiki/Euclid">Wikipedia</a></span></span></span> shown in Orion's sword. Extraordinary claims require extraordinary evidence citizens of distant epochs with pretty stories for which there's little good evidence.</p>
+					<p><small><strong>Image credit</strong> <a href="http://www.spacetelescope.org/images/heic1116a/">Quasar HE 1104-1805</a> by NASA, ESA and J.A. Muñoz (University of Valencia)</small></p> -->
+                   
+                </div>
+            </div>  
+        </section>
+
+        <h2 class="title">Imagenes</h2>
+        <section id="fotos" class=" section_fotos">
+            <div class="container container_fotos">
+                <div class="content">
+                    <div class="gallery">
+                        <ul class="gallery-pictures">
+                            <li class="gallery-picture">
+                                <img src="images/1.jpg" alt="img01">           
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/2.jpg" alt="img02">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/3.jpg" alt="img03">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/4.jpg" alt="img04">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/5.jpg" alt="img05">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/6.jpg" alt="img06">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/7.jpg" alt="img07">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/8.jpg" alt="img08">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/9.jpg" alt="img09">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/10.jpg" alt="img10">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/equipo1.jpg" alt="img10">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/11.jpg" alt="img01">           
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/12.jpg" alt="img02">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/13.jpg" alt="img03">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/14.jpg" alt="img04">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/15.jpg" alt="img05">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/16.jpg" alt="img06">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/17.jpg" alt="img07">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/18.jpg" alt="img08">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/19.jpg" alt="img09">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/20.jpg" alt="img10">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/21.jpg" alt="img10">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/22.jpg" alt="img10">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/23.jpg" alt="img10">
+                            </li>
+                            <li class="gallery-picture">
+                                <img src="images/24.jpg" alt="img10">
+                            </li>
+                            
+                        </ul>
+                        <div class="gallery-pagination">
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+                            <button class="gallery-pagination-dot"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+        <section id="servicios" class="sections section_servicios">
+            <h2 class="title">Servicios</h2>
+            <div class="determinaciones_container">
+                <div class="tabs tabs-style-bar">
+                    <nav>
+                        <ul>
+                            <li><a href="#section-bar-3" class="icon icon-display"><span>Deriv&aacute;</span></a></li>
+                            <li><a href="#section-bar-1" class="icon icon-home"><span>Determinaciones</span></a></li>
+                            <li><a href="#section-bar-2" class="icon icon-box"><span>Resultados</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="content-wrap">
+                        <section id="section-bar-3" class="section-bar-3">
+                            <p>DERIV&Aacute;</p>
+                            Deriv&aacute; al laboratorio BIOMAV y accede a beneficios como:
+                            <ul class="ul_deriva">
+                                <div>
+                                    <img src="./images/check.svg" alt="check" class="img_deriva">
+                                    <li class="li_deriva"> Retiro <br> Muestras</li>  
+                                </div>
+                                <div>
+                                    <img src="./images/check.svg" alt="check" class="img_deriva">                          
+                                    <li class="li_deriva">Resultados <br> Online</li>
+                                </div>
+                                <div>
+                                    <img src="./images/check.svg" alt="check" class="img_deriva">
+                                    <li class="li_deriva">Asistencia <br> Bioquimica</li>
+                                </div>
+                                
+                                
+                            </ul>
+                            <!-- ESCRIBINOS PARA MAS INFORMACION O VISITANOS POR EL LABORATORIO.
+                            Contacto -> mail especial??? -->
+                            <div class="box bg-3"> 
+                                <button class="button button--nuka">Contacto</button>
+                            </div>
+                        </section>
+                        <section id="section-bar-1">
+                            <p>DETERMINACIONES</p>
+                            Conoce el listado completo de nuestras determinaciones <br>                    
+                            <div class="box bg-3"> 
+                                <button class="button button--nuka">Listado</button>
+                            </div>
+                        </section>
+                        <section id="section-bar-2">
+                            <p>RESULTADOS</p>
+                            Conoce el estado de tus analisis<br>
+                            <div class="box bg-3"> 
+                                <button class="button button--nuka">Resultados</button>
+                            </div>
+                        </section>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="title">Colaboradores</h2>
+        <section id="obrasSociales" class="ob">
+            <div class="ob__container container">    
+                <img src="./imagenes/leftarrow.svg" class="ob__arrow" id="beforeO">
+                <section class="ob__body ob__body--show" data-id="1">
+                    <figure class="ob__picture">
+                       <img src="./images/logoCientifica.png" class="ob__img"> 
+                    </figure>
+                    <figure class="ob__picture">
+                        <img src="./imagenes/swissmedical.png" class="ob__img"> 
+                     </figure>
+                     <figure class="ob__picture">
+                        <img src="./imagenes/pami.png" class="ob__img"> 
+                     </figure>
+                </section>
+                <section class="ob__body" data-id="2">
+                    <figure class="ob__picture">
+                        <img src="./imagenes/femesa.png" class="ob__img"> 
+                     </figure>
+                     <figure class="ob__picture">
+                         <img src="./imagenes/galeno.png" class="ob__img"> 
+                      </figure>
+                      <figure class="ob__picture">
+                         <img src="./imagenes/medife.png" class="ob__img"> 
+                      </figure>
+                </section>
+                <!-- <section class="ob__body" data-id="3">
+                    <figure class="ob__picture">
+                        <img src="./imagenes/osde.png" class="ob__img"> 
+                     </figure>
+                     <figure class="ob__picture">
+                         <img src="./imagenes/sancor.png" class="ob__img"> 
+                      </figure>
+                      <figure class="ob__picture">
+                         <img src="./imagenes/osfatunPng.png" class="ob__img"> 
+                      </figure>
+                </section> -->
+                <img src="./imagenes/rightarrow.svg" class="ob__arrow" id="nextO">
+            </div>
+        </section>
+       
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav--footer">
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#inicio" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#contacto" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#nosotros" class="nav__links">Nosotros</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#servicios" class="nav__links">Servicios</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="footer__copy container">
+            <h3 class="footer__copyright">Derechos reservados &copy; | Laboratorio BIOMAV</h3>
+        </section>
+
+    </footer>
+
+    <!-- 
+    <script src="./js/menu.js"></script> -->
+    <script src="./js/sliderObras.js"></script>
+    <script src="./js/modernizr.custom.js"></script> 
+    <script src="js/gallery.js"></script>
+    <script src="js/cbpFWTabs.js"></script>
+    <script src="./js/classie.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        (function() {
+
+            [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+                new CBPFWTabs( el );
+            });
+
+        })();
+    </script>
+    <a class="botonFijo" href="#inicio"><img src="./imagenes/uparrow.svg" class="arrowUp"></a> 
+    
+</body>
+</html>

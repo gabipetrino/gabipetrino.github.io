@@ -1,0 +1,3 @@
+amarillo #FAAF2E
+azul-violeta #1D293F
+celeste #a2d3e0
