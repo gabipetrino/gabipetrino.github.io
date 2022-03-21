@@ -14,6 +14,13 @@
     box-sizing: border-box;
 }
 
+.aux{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
 .hidden {
 	position: absolute;
 	overflow: hidden;
@@ -68,8 +75,6 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-   
-
   
 }
 
@@ -175,7 +180,8 @@ body{
 .section_contacto{
     flex-direction: column;
     align-items: center;
-    width: 85%;
+    /* width: 85%;  esto lo cambie para que en tamanio notebook queden los 4*/
+    width: 97%;
     max-width:1800px;
     height: auto;
 }
@@ -378,12 +384,6 @@ body{
 .testimonial-footer--best h3, .testimonial-footer--best h4{
     transform: rotate(180deg);
     
-}
-
-.testimonial:hover{
-    /* transform: rotate(180deg);
-    filter: blur(1px);
-    transition: all 0.3s; */
 }
 
 .testimonial-body {
@@ -790,11 +790,8 @@ body{
     --shadow-color: 0deg 0% 0%;
     box-shadow: 0.3px 0.4px 0.6px hsl(var(--shadow-color) / 0.72),
     5.7px 7.7px 10.8px -2.5px hsl(var(--shadow-color) / 0.72);
-    z-index: 1000;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    /* backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px); */
 
 }
 
@@ -1170,20 +1167,6 @@ body{
 
 /* US - Bioqui */
 
-.us{
-    
-
-}
-
-/* .us__title{
-    color: var(--color-title);
-    font-size: 2rem;
-    margin-bottom: 25px;
-    text-align: center;
-    padding-top: 25px;
-    padding-bottom: 0;
-} */
-
 .us__container{
     display: grid;
     grid-template-columns: 50px 1fr 50px;
@@ -1262,6 +1245,7 @@ body{
     object-fit: contain;
     object-position: 50% 80%;
     filter: drop-shadow(2px 2px 2px grey);
+    
 }
 
 .ob__container{
@@ -1477,7 +1461,6 @@ body{
 
 /* RESPONSIVE */
 
-/* Hola */
 
 /* MEDIA QUERIES */
 
@@ -1654,7 +1637,11 @@ body{
     }
 
     .homeText{
+<<<<<<< HEAD
         width: 90%;
+=======
+        width: 100%;
+>>>>>>> 37715e773f53c8fdc9973b0ca68d5cb7b5cc54e3
     }
 
 

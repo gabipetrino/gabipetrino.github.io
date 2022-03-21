@@ -62,7 +62,7 @@ $(document).ready(function() {
 
     function updateGalleryPos(){
     	TweenMax.set($galleryPictures,{
-    		x:galleryPos.x+(500),
+    		x:galleryPos.x+(($(window).width()-imageWidth)/2),
     		force3D:true,
     		lazy:true
     	});
