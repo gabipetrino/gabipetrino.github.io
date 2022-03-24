@@ -6,13 +6,13 @@ $(document).ready(function() {
         lastPos = {x:0},
         galleryPos = {x:0},
         currentImage = -1,
-        imageWidth = 700,
+        imageWidth = (document.querySelector('.gallery-picture img').width),
         imageSpacing = 120,
         imageTotalWidth=imageWidth+imageSpacing,
         speedLog=[],
         speedLogLimit=5,
         minBlur=2,
-        maxBlur=100,
+        maxBlur=200,
         blurMultiplier=0.25,
         lastBlur=0,
         dragging=false,
@@ -62,7 +62,7 @@ $(document).ready(function() {
 
     function updateGalleryPos(){
     	TweenMax.set($galleryPictures,{
-    		x:galleryPos.x+(($(window).width()-imageWidth)/2),
+    		x:galleryPos.x+(($(window).width()-(document.querySelector('.gallery-picture img').width))/2),
     		force3D:true,
     		lazy:true
     	});

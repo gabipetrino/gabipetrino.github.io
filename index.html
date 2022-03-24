@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIOMAV</title>
     <link rel="shortcut icon" href="./images/logo2.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
@@ -19,7 +18,26 @@
     <link rel="stylesheet" type="text/css" href="css/menu_topexpand.css" />
 
     <!-- METATAGS -->
+    <!-- Primary Meta Tags -->
+    <title>Laboratorio BIOMAV</title>
+    <meta name="title" content="Laboratorio BIOMAV">
+    <meta name="description" content="Laboratorio de Biomedicina Avanzada">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Laboratorio BIOMAV">
+    <meta property="og:description" content="Laboratorio de Biomedicina Avanzada">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Laboratorio BIOMAV">
+    <meta property="twitter:description" content="Laboratorio de Biomedicina Avanzada">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    
     <!-- Google Analitics -->
     <script src="js/TweenMax.min.js"></script>
     <script src="js/jquery.min.js"></script>
@@ -39,10 +57,10 @@
         <div class="menu-wrap">
             <nav class="menuExpand">
                 <div class="icon-list">
-                    <a href="#"><i class="fa fa-fw fa-star-o"></i><span>Inicio</span></a>
-                    <a href="#"><i class="fa fa-fw fa-bell-o"></i><span>Contacto</span></a>
-                    <a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Nosotros</span></a>
-                    <a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Servicios</span></a>
+                    <a href="#inicio"><i class="fa fa-fw fa-star-o"></i><span>Inicio</span></a>
+                    <a href="#contacto"><i class="fa fa-fw fa-bell-o"></i><span>Contacto</span></a>
+                    <a href="#nosotros"><i class="fa fa-fw fa-envelope-o"></i><span>Nosotros</span></a>
+                    <a href="#servicios"><i class="fa fa-fw fa-comment-o"></i><span>Servicios</span></a>
                 </div>
             </nav>
         </div>
@@ -52,14 +70,14 @@
     <header id="inicio" class="hero"> 
         <nav class="menu--juliet nav">
             <ul class="menu__list nav__link ">
-                <li class="menu__item menu__item--current"><a href="#" class="menu__link">Inicio</a></li>
+                <li class="menu__item menu__item--current"><a href="#inicio" class="menu__link">Inicio</a></li>
                 <li class="menu__item"><a href="#contacto" class="menu__link">Contacto</a></li>
                 <li class="menu__item"><a href="#nosotros" class="menu__link">Nosotros</a></li>
                 <li class="menu__item"><a href="#servicios" class="menu__link">Servicios</a></li>
             </ul>
         </nav>
 
-        <section class="hero__container container">
+        <section id="inicio" class="hero__container container">
             <div class="hero__body">
                 <img src="./images/escudo.png" alt="Logo" class="logoHome">
                 <div class="homeText">
@@ -139,8 +157,7 @@
                         </div>                                        
                 </div>                      
             </div>
-        </section>
-        
+        </section>       
         
     </header>
 
@@ -158,7 +175,7 @@
                         <h3>WathsApp</h3>
                     </div>
                     <div class="testimonial-body">
-                        <p>Puede cliquear en el icono o llamar al 2664-941259</p>
+                        <p>Puede <strong>cliquear en el icono</strong> o llamar al <span style="text-decoration: none;">2664-941259</span></p>
                     </div>
                 </div>
                 <div class="testimonial">
@@ -217,7 +234,7 @@
 
         <h2 class="title">Imagenes</h2>
         <section id="fotos" class=" section_fotos">
-            <div class="container container_fotos">
+            <div class=" container_fotos">
                 <div class="content">
                     <div class="gallery">
                         <ul class="gallery-pictures">
@@ -393,7 +410,7 @@
         <h2 class="title">Colaboradores</h2>
         <section id="obrasSociales" class="ob">
             <div class="ob__container container">    
-                <img src="./imagenes/leftarrow.svg" class="ob__arrow" id="beforeO">
+                <img src="./images/leftarrow.svg" class="ob__arrow" id="beforeO">
                 <section class="ob__body ob__body--show" data-id="1">
                     <figure class="ob__picture">
                        <img src="./images/logoCientifica.png" class="ob__img"> 
@@ -405,7 +422,7 @@
                         <img src="./images/logoPetrino.png" class="ob__img"> 
                      </figure>
                 </section>
-                <section class="ob__body" data-id="2">
+                <!-- <section class="ob__body" data-id="2">
                     <figure class="ob__picture">
                         <img src="./imagenes/femesa.png" class="ob__img"> 
                      </figure>
@@ -415,7 +432,7 @@
                       <figure class="ob__picture">
                          <img src="./imagenes/medife.png" class="ob__img"> 
                       </figure>
-                </section>
+                </section> -->
                 <!-- <section class="ob__body" data-id="3">
                     <figure class="ob__picture">
                         <img src="./imagenes/osde.png" class="ob__img"> 
@@ -427,7 +444,7 @@
                          <img src="./imagenes/osfatunPng.png" class="ob__img"> 
                       </figure>
                 </section> -->
-                <img src="./imagenes/rightarrow.svg" class="ob__arrow" id="nextO">
+                <img src="./images/rightarrow.svg" class="ob__arrow" id="nextO">
             </div>
         </section>
        
@@ -476,7 +493,7 @@
         })();
     </script>
 
-    <a class="botonFijo" href="#inicio"><img src="./imagenes/uparrow.svg" class="arrowUp"></a> 
+    <a class="botonFijo" href="#inicio"><img src="./images/uparrow.svg" class="arrowUp"></a> 
     
 </body>
 </html>

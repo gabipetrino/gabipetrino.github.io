@@ -66,12 +66,14 @@
 .menuExpand {
 	height: 100%;
 	overflow: hidden;
-	font-size: 0.75em;
+	font-size: 0.80em;
+	display: flex;
+	align-items: center;
 }
 
 .icon-list {
 	float: right;
-	padding: 2.5em 2em 0 6em;
+	padding: 0em 1.2em 0 6em;
 }
 
 .icon-list a {
@@ -80,19 +82,18 @@
 	padding: 0 0.2em;
 	margin: 0 15px;
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 1.5em;
+	font-weight: 900;
 	text-decoration: none;
 }
 
 .icon-list a span {
-	/* display: block; */
+	display: block;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 0.5em;
 	font-weight: 700;
 	padding-top: 0.5em;
-
-	
 }
 
 @media (max-width: 650px) {

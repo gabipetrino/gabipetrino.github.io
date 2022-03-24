@@ -124,7 +124,7 @@
 .tooltip {
 	display: inline;
 	position: relative;
-	z-index: 999;
+	z-index: 100;
 }
 
 /* Trigger text */
@@ -273,4 +273,21 @@
 
 .tooltip-text a {
 	font-weight: bold;
+}
+
+@media (max-width: 375px){
+
+    .tooltip-content {
+		width: 250px;
+		margin: 0 0 52px -50px;
+	}
+
+}
+
+@media (max-width: 320px){
+
+    .tooltip-content {
+		width: 200px;
+	}
+
 }
