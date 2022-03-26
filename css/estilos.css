@@ -1478,6 +1478,7 @@ body{
 
     .logoHome{
         height: 60%;
+        margin-right: 0;
     }
     
 }
