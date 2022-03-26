@@ -1591,8 +1591,6 @@ body{
         margin: 0 10px;
     }
     
-  
-
 }
 
 @media (max-width: 425px){
@@ -1657,10 +1655,40 @@ body{
         width: 100%;
     }
 
-
 }
 
+@media (max-height: 500px){
 
+    .nav,.botonFijo{
+        position: absolute;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        pointer-events: none;
+    }
 
+    .homeText{
+        width: 50%;
+        max-width: 450px;
+    }
 
+    .hero__container{
+        min-height: 260px;
+        margin-top:400px; 
+        padding: 15px 0px;
+        
+    }
+
+    .hero__body{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logoHome{
+        height: 90%;
+        margin: 0px;
+    }
+    
+}
 

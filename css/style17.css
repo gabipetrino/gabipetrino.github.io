@@ -65,8 +65,7 @@
   display: flex;
   flex-direction: column;
   font: 800 17em 'Calibri'; 
-  margin:40px;
-  margin-left: 0px;
+  margin:40px 0px;
   text-decoration: none;
   text-align: center;
   
@@ -75,7 +74,7 @@
 
 svg {
   width: 90%;
-  margin: 0 auto ;
+  margin: 0 20px;
   display: block;
   text-transform: uppercase; 
   border: 0px;

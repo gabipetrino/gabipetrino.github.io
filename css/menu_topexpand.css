@@ -103,6 +103,13 @@
 	}
 }
 
+@media (max-height: 500px) {
+	.menu-button,
+	.menu-wrap {
+		display: block;
+	}
+}
+
 /* Shown menu */
 .show-menu .content-wrap {
 	-webkit-transition-delay: 0s;
