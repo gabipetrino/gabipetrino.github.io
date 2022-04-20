@@ -1,8 +1,8 @@
 (function(){
 
-    const sliders = [...document.querySelectorAll('.ob__body')];
-    const buttonNext = document.querySelector('#nextO');
-    const buttonBefore = document.querySelector('#beforeO');
+    const sliders = [...document.querySelectorAll('.us__body')];
+    const buttonNext = document.querySelector('#next');
+    const buttonBefore = document.querySelector('#before');
     let value;
 
     buttonNext.addEventListener('click',()=>{
@@ -14,22 +14,22 @@
     });
 
     const changePosition = (add)=>{
-        const currentTestimony= document.querySelector('.ob__body--show').dataset.id;
+        const currentTestimony= document.querySelector('.us__body--show').dataset.id;
         value = Number(currentTestimony);
         value += add;
 
-        sliders[Number(currentTestimony)-1].classList.remove('ob__body--show');
+        sliders[Number(currentTestimony)-1].classList.remove('us__body--show');
 
         if(value === sliders.length+1 || value === 0){
             value = value===0 ? sliders.length : 1;
         }
 
-        sliders[value-1].classList.add('ob__body--show');
+        sliders[value-1].classList.add('us__body--show');
 
     }
 
-    setInterval(function() {
+    /* setInterval(function() {
         changePosition(1);
-    },6000)
+    },6000) */
 
 })();
